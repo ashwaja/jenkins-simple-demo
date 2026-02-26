@@ -11,7 +11,7 @@ pipeline {
    stage('Run Script') {
      steps {
        sh 'chmd +x script.sh'
-       sh '/.script.sh
+       sh '/.script.sh'
       }
    }
  }
