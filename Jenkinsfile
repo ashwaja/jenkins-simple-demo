@@ -4,14 +4,14 @@ pipeline {
    stages {
     stage('clone') {
      steps {
-       git url:"https://github.com/ashwaja/jenkins-simple-demo.git"
+       git url:"https://github.com/ashwaja/jenkins-simple-demo.git",
          branch: 'main'
      }
    }
    stage('Run Script') {
      steps {
        sh 'chmod +x script.sh'
-       sh '/.script.sh'
+       sh './script.sh'
       }
    }
  }
